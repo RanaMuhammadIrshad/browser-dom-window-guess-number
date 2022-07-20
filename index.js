@@ -1,3 +1,4 @@
+// Method-1
 const guessNum = function () {
   const num = Math.ceil(Math.random() * 10);
   console.log(num);
@@ -20,3 +21,22 @@ const guessNum = function () {
   }
 };
 guessNum();
+
+// Method -2
+// function play() {
+//   let randNumber = Math.floor(Math.random() * 10) + 1;
+//   console.log(randNumber);
+//   let attempts = 1;
+//   let guessNum = +prompt(`Guess a number between 1 and 10`);
+//   while (guessNum !== randNumber && attempts < 3) {
+//     attempts++;
+//     guessNum = +prompt("Wrong!!!! Try again");
+//   }
+//   if (guessNum === randNumber) {
+//     alert(`Success! The number was ${randNumber}! Attempts: ${attempts}`);
+//   } else {
+//     `Sorry, you failed to guess the number in three attempts. The number was ${randNumber}`;
+//   }
+// }
+
+// play();
